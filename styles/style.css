@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* testimonial style  */
+.testimonial {
+    padding: 30px 0px;
+}
+
+.testimonial-head {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 16px 0px;
+    color: rgb(31 41 55);
+}
+
+.testimonial-client-says {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    line-height: 3rem;
+    color: rgb(31 41 55);
+    margin-top: 10px;
+    text-align: center;
+}
+
+.testimonial-person {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    gap: 24px;
+}
+
+.person-details {
+    width: 100%;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    padding: 24px;
+}
+
+.person-svg {
+    display: flex;
+    color: #4B5563;
+    flex-direction: column;
+    align-items: center;
+}
+
+.person-svg-bottom {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -1.5rem;
+    color: #ffffff;
+}
+
+.person-info {
+    display: flex;
+    margin-top: 2.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.person-img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.person-name {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #1F2937;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    line-height: 1rem;
+}
+
+.person-passion {
+    color: #4B5563;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    line-height: 1rem;
+    text-align: center;
+}
+
+.person-talk {
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Start Media Queries */
+
+/* Extra small devices (phones, 600px and down) */
+@media (min-width: 640px) {
+
+    /* testimonial section media queries */
+    .testimonial-person {
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+/* Large devices (laptops/desktops, 768px and up) */
+@media (min-width: 768px) {
+
+    /* testimonial section media queries */
+    .testimonial-client-says {
+        font-size: 3rem;
+    }
+
+    .testimonial-person {
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .person-details {
+        width: 100%;
+        background-color: white;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        padding: 48px;
+    }
+}
+@media (min-width: 1024px) {
+
+    /* testimonial section media queries */
+    .testimonial-person {
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
